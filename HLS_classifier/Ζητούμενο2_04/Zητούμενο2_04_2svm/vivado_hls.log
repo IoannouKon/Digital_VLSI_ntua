@@ -1,0 +1,22 @@
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running 'C:/VLSI/Vivado/2018.2/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'User' on host 'laptop' (Windows NT_amd64 version 6.2) on Fri Jul 21 13:23:15 +0300 2023
+INFO: [HLS 200-10] In directory 'C:/Users/User/Desktop/HLSI_ex2_01'
+INFO: [HLS 200-10] Opening project 'C:/Users/User/Desktop/HLSI_ex2_01/Classifier_VLSI'.
+INFO: [HLS 200-10] Opening solution 'C:/Users/User/Desktop/HLSI_ex2_01/Classifier_VLSI/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling(apcc) ../../../../Classifier.c in debug mode
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running 'C:/VLSI/Vivado/2018.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'User' on host 'laptop' (Windows NT_amd64 version 6.2) on Fri Jul 21 13:23:17 +0300 2023
+INFO: [HLS 200-10] In directory 'C:/Users/User/Desktop/HLSI_ex2_01/Classifier_VLSI/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+   Generating csim.exe
+Comparing against output data 
+The accuracy is 99.30%
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************

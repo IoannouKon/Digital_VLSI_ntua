@@ -1,0 +1,81 @@
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running 'C:/VLSI/Vivado/2018.2/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'User' on host 'laptop' (Windows NT_amd64 version 6.2) on Wed Jul 19 18:16:12 +0300 2023
+INFO: [HLS 200-10] In directory 'C:/Users/User/Desktop/HLSI_ex2_01'
+INFO: [HLS 200-10] Opening project 'C:/Users/User/Desktop/HLSI_ex2_01/Classifier_VLSI'.
+INFO: [HLS 200-10] Adding design file 'Classifier.c' to the project
+INFO: [HLS 200-10] Adding test bench file 'Classifier.h' to the project
+INFO: [HLS 200-10] Adding test bench file 'Classifier_test.c' to the project
+INFO: [HLS 200-10] Opening solution 'C:/Users/User/Desktop/HLSI_ex2_01/Classifier_VLSI/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [HLS 200-10] Analyzing design file 'Classifier.c' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 101.762 ; gain = 46.082
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 101.762 ; gain = 46.082
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 103.211 ; gain = 47.531
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 103.465 ; gain = 47.785
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 124.168 ; gain = 68.488
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 125.637 ; gain = 69.957
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'svmClassification_top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'svmClassification' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 5.681 seconds; current allocated memory: 86.699 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 2 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] After resource sharing, estimated clock period (10.3822ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+INFO: [BIND 205-100] The critical path consists of the following:
+	'dsub' operation ('tmp_6', Classifier.c:24) (10.4 ns)
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.176 seconds; current allocated memory: 87.499 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'svmClassification_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.209 seconds; current allocated memory: 87.604 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.034 seconds; current allocated memory: 87.638 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'svmClassification' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'svmClassification_top_dadddsub_64ns_64ns_64_5_full_dsp_1' to 'svmClassificationbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'svmClassification_top_dsub_64ns_64ns_64_5_full_dsp_1' to 'svmClassificationcud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'svmClassification_top_dmul_64ns_64ns_64_6_max_dsp_1' to 'svmClassificationdEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'svmClassification_top_dcmp_64ns_64ns_1_1_1' to 'svmClassificationeOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'svmClassification_top_dexp_64ns_64ns_64_18_full_dsp_1' to 'svmClassificationfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'svmClassification_top_mul_mul_5ns_12ns_15_1_1' to 'svmClassificationg8j' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'svmClassificationbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'svmClassificationcud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'svmClassificationdEe': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'svmClassificationeOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'svmClassificationfYi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'svmClassificationg8j': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'svmClassification'.
+INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 89.133 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'svmClassification_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'svmClassification_top/x' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'svmClassification_top/coefficients' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'svmClassification_top/support_vectors' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'svmClassification_top' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'svmClassification_top'.
+INFO: [HLS 200-111]  Elapsed time: 0.468 seconds; current allocated memory: 89.516 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 140.879 ; gain = 85.199
+INFO: [SYSC 207-301] Generating SystemC RTL for svmClassification_top.
+INFO: [VHDL 208-304] Generating VHDL RTL for svmClassification_top.
+INFO: [VLOG 209-307] Generating Verilog RTL for svmClassification_top.
+INFO: [HLS 200-112] Total elapsed time: 7.785 seconds; peak allocated memory: 89.516 MB.
