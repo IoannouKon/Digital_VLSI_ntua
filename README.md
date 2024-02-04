@@ -9,7 +9,7 @@ This repository encompasses a range of topics covered in the Digital VLSI course
 
 1. **Course Content**: Introduction to VHDL language, pipeline utilization for adders and multipliers, FIR filter, Debayer filter, IP component creation, and FPGA implementation using Zybo 2.0.
 
-2. **Laboratory Implementations**: The repository contains six laboratory implementations with increasing complexity. These cover fundamental concepts such as adders, flip-flops, 4-bit adders, and multipliers, progressing to advanced topics like FIR and DeBayer filters, culminating in FPGA (Zybo) implementation. [click here(./VHDL_exercises)
+2. **Laboratory Implementations**: The repository contains six laboratory implementations with increasing complexity. These cover fundamental concepts such as adders, flip-flops, 4-bit adders, and multipliers, progressing to advanced topics like FIR and DeBayer filters, culminating in FPGA (Zybo) implementation. [click here](./VHDL_exercises)
 
 3. **Theoretical Analyses and Methodologies**: General examples and theoretical analyses are provided for VHDL, RAM, FSM, Wallace multipliers, counters, critical path determination, and delays.
 
