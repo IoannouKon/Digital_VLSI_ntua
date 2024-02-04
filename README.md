@@ -1,11 +1,21 @@
+
 # Digital_VLSI_ntua
-Introduction to digital VLSI using vhdl in vivado tool as well as HLS.
-Answers to the Digital VLSI course of NTUA University for the academic year 2022-2023.
-Introduction to the Vhdl language, use of pipelines for adders and multipliers, FIR filter, Debayer filter, IP component creation and implementation in fpga. For the exercises I used Zybo 2.0
 
-The present GitHub repository is the implementation for various applications and designs carried out in the course Digital VLSI at ECE NTUA during the academic year 2022-2023.
+Welcome to the Digital VLSI repository for the NTUA University's course during the academic year 2022-2023. This repository serves as a comprehensive resource for digital VLSI design using VHDL in the Vivado tool, along with High-Level Synthesis (HLS).
 
-The repository contains
-1) Six laboratory implementations with escalating difficulty, which include simple introductory implementations of basic components such as adders, flip-flops, 4-bit adders, and multipliers, up to the implementation of FIR and DeBayer filters, as well as their implementation on an FPGA (Zybo).
-2) General examples "Theoretical analyses and basic methodologies for implementation in VHDL, RAM, FSM, Wallace multipliers, counters, as well as theoretical determination of critical paths and delays.
-3)  A simple project that implements an FIR filter in HLS explores various methods to improve resource consumption and latency. It also compares the results with the implementation of FIR in VHDL. Additionally, it includes an HLS classifier, along with explanations and testing of various directives and improvements in hardware implementation.
+## Overview
+
+This repository encompasses a range of topics covered in the Digital VLSI course at ECE NTUA, including:
+
+1. **Course Content**: Introduction to VHDL language, pipeline utilization for adders and multipliers, FIR filter, Debayer filter, IP component creation, and FPGA implementation using Zybo 2.0.
+
+2. **Laboratory Implementations**: The repository contains six laboratory implementations with increasing complexity. These cover fundamental concepts such as adders, flip-flops, 4-bit adders, and multipliers, progressing to advanced topics like FIR and DeBayer filters, culminating in FPGA (Zybo) implementation.
+
+3. **Theoretical Analyses and Methodologies**: General examples and theoretical analyses are provided for VHDL, RAM, FSM, Wallace multipliers, counters, critical path determination, and delays.
+
+4. **HLS FIR Filter Project**: A simple project demonstrates the implementation of an FIR filter in HLS. Various techniques to enhance resource utilization and reduce latency are explored. Additionally, comparisons with VHDL implementation of FIR filters are presented. The project also includes an HLS classifier, detailed explanations, and testing of directives for hardware optimization.
+
+This repository aims to serve as a valuable resource for students and enthusiasts interested in digital VLSI design and FPGA implementation.
+
+Feel free to explore the code and documentation, and contributions are always welcome!
+
