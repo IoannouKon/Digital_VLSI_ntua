@@ -13,7 +13,7 @@ This repository encompasses a range of topics covered in the Digital VLSI course
 
 3. **Theoretical Analyses and Methodologies**: General examples and theoretical analyses are provided for VHDL, RAM, FSM, Wallace multipliers, counters, critical path determination, and delays.[click here](./VHDL_examples)
 
-4. **HLS FIR Filter Project**: A simple project demonstrates the implementation of an FIR filter in HLS. Various techniques to enhance resource utilization and reduce latency are explored. Additionally, comparisons with VHDL implementation of FIR filters are presented. The project also includes an HLS classifier, detailed explanations, and testing of directives for hardware optimization.[click here](./HLS)
+4. **HLS FIR Filter Project**: A simple project demonstrates the implementation of an FIR filter in HLS. Various techniques to enhance resource utilization and reduce latency are explored. Additionally, comparisons with VHDL implementation of FIR filters are presented. The project also includes an HLS classifier, detailed explanations, and testing of directives for hardware optimization.[click here](./HLS_classifier)
 
 This repository aims to serve as a valuable resource for students and enthusiasts interested in digital VLSI design and FPGA implementation.
 
