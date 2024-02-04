@@ -11,7 +11,7 @@ This repository encompasses a range of topics covered in the Digital VLSI course
 
 2. **Laboratory Implementations**: The repository contains six laboratory implementations with increasing complexity. These cover fundamental concepts such as adders, flip-flops, 4-bit adders, and multipliers, progressing to advanced topics like FIR and DeBayer filters, culminating in FPGA (Zybo) implementation. [click here](./VHDL_exercises)
 
-3. **Theoretical Analyses and Methodologies**: General examples and theoretical analyses are provided for VHDL, RAM, FSM, Wallace multipliers, counters, critical path determination, and delays.[click here](./)
+3. **Theoretical Analyses and Methodologies**: General examples and theoretical analyses are provided for VHDL, RAM, FSM, Wallace multipliers, counters, critical path determination, and delays.[click here](./DVLSI_examples)
 
 4. **HLS FIR Filter Project**: A simple project demonstrates the implementation of an FIR filter in HLS. Various techniques to enhance resource utilization and reduce latency are explored. Additionally, comparisons with VHDL implementation of FIR filters are presented. The project also includes an HLS classifier, detailed explanations, and testing of directives for hardware optimization.[click here](./HLS_classifier)
 
