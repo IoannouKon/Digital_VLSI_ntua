@@ -72,4 +72,4 @@ For the implementation of the control unit, it is crucial to examine the VHDL di
 
 We adjusted the Control Unit module to ensure that the Counter freezes when it receives valid_in and counts up to 8, disregarding intermediate valid_in signals. Before this modification, our filter produced accurate results only under ideal conditions, where valid_in and the counter started simultaneously. However, this scenario is feasible in the testbench but not in FPGA implementation due to the overhead cycles involved in communication with the processor.
 
-
+### [Exercise 5](./VlSI-4(FIR_in_Zybo))
