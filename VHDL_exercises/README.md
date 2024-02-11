@@ -10,7 +10,7 @@ This repository contains projects and exercises related to Digital VLSI.
 - [Exercise 5](#exercise-5)
 - [Exercise 6](#exercise-6)
 
---
+--- 
 
 ###  [Exercise 1](./VLSI-1(introduction))
 
@@ -67,7 +67,7 @@ The purpose of the laboratory exercise is to familiarize students with the techn
 3) **Implement a systolic (pipeline-like) multiplier for 4-bit carry-propagate using synchronous Full Adders.** The circuit should be fed with a different pair of inputs at each clock cycle and should give the correct result in each clock cycle after some initial latency T_latency.
    ![4-bit Systolic Multiplier](https://github.com/IoannouKon/Digital_VLSI_ntua/assets/132226067/a9d798f4-dcdd-49ea-8b5b-d6a189945267)
 
-   --
+--- 
    
 ### [Exercise 4](./VlSI-4(FIR))
 
