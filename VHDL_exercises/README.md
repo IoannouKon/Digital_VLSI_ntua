@@ -9,7 +9,7 @@ This repository contains projects and exercises related to Digital VLSI.
 - [Exercise 4](#exercise-4)
 - [Exercise 5](#exercise-5)
 - [Exercise 6](#exercise-6)
-- 
+
 ###  [Exercise 1](./VLSI-1(introduction))
 
 #### A2) Decoder 3 to 8 with Two Different Architectures: Dataflow and Behavioral
