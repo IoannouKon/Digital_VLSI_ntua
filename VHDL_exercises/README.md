@@ -38,6 +38,15 @@ The purpose of the laboratory exercise is to familiarize students with the desig
 
 
 ### [Exercise 3](./VLSI-3(Syncronus_FA_and_4_bit_multipliers))
->>>>>>> 8768236647f1c8d67a7c60a563e29b8d9f3d1eb5
+The purpose of the laboratory exercise is to familiarize students with the technique of Pipelining. Specifically, the design of modern computational circuits will be conducted using the pipeline technique. The goal is to illustrate how different subsystems of a circuit can process different subsets of data in parallel.
+
+1) Implement a modern Full Adder (FA) with a Behavioral description.
+   ![Screenshot from 2024-02-11 20-14-50](https://github.com/IoannouKon/Digital_VLSI_ntua/assets/132226067/3496d037-4f20-40fb-a0a2-43b15c774602)
+
+2)Implement a modern 4-bit carry lookahead adder using the Pipeline technique. The circuit should be fed with a different pair of inputs at each clock cycle and should give the correct result in each clock cycle after some initial latency T_latency. The implementation should be based on the structural unit of the Full Adder from Question 1).
+![Screenshot from 2024-02-11 20-16-16](https://github.com/IoannouKon/Digital_VLSI_ntua/assets/132226067/45d42ae3-135d-44c3-be6d-8f7c1be85d1f)
+
+3)Implement a systolic (pipeline-like) multiplier for 4-bit carry-propagate using synchronous Full Adders. The circuit should be fed with a different pair of inputs at each clock cycle and should give the correct result in each clock cycle after some initial latency T_latency.
+![Screenshot from 2024-02-11 20-17-21](https://github.com/IoannouKon/Digital_VLSI_ntua/assets/132226067/a9d798f4-dcdd-49ea-8b5b-d6a189945267)
 
 
