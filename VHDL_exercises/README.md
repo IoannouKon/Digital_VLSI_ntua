@@ -18,4 +18,21 @@ Based on the provided counter, we describe a 3-bit up counter with a parallel in
 
 We also describe an up/down counter based on the provided counter implementation.
 
-Feel free to adjust the formatting and add any additional information you deem necessary for your Git README.
+### [Exercise 2](./VLSI-2(ADDERS))
+
+1) Implement a Half Adder (HA) using a Dataflow description.
+![Screenshot from 2024-02-11 19-32-58](https://github.com/IoannouKon/Digital_VLSI_ntua/assets/132226067/0563298d-4dbd-42f7-b2cf-3d3a69382dea)
+
+2) Implement a Full Adder (FA) using a Structural description, based on the structural unit of Question 1.
+![Screenshot from 2024-02-11 19-33-29](https://github.com/IoannouKon/Digital_VLSI_ntua/assets/132226067/60f0dc92-2946-462d-a1d3-b91582bf82ba)
+
+3) Implement a 4-bit Parallel Adder (4-bit PA) using a Structural description, based on the structural unit of Question 2.
+![Screenshot from 2024-02-11 19-34-47](https://github.com/IoannouKon/Digital_VLSI_ntua/assets/132226067/1c30b92d-1760-4c65-8c78-ec6267e05068)
+
+4) Implement a BCD Full Adder (BCD FA) using a Structural description. Utilize the structural unit implemented in Question 3, any structural unit from the previous questions, and any additional logic you consider necessary.
+![Screenshot from 2024-02-11 19-35-42](https://github.com/IoannouKon/Digital_VLSI_ntua/assets/132226067/94d43fa5-39e2-421d-97bc-9c7627b20a27)
+
+5) Implement a 4-digit Parallel BCD Adder (4-BCD PA) using a Structural description, based on the structural unit of Question 4.
+![Screenshot from 2024-02-11 19-36-20](https://github.com/IoannouKon/Digital_VLSI_ntua/assets/132226067/af23ff82-83f0-4ec5-81e9-ca380a9e7d6b)
+
+Feel free to adjust the formatting and add any additional information you deem necessary for your Git repository.
