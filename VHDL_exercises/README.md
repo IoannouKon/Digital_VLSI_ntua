@@ -64,5 +64,9 @@ Attention: When integrating all individual units to create the overall architect
 
 This configuration ensures synchronization through D Flip-Flops for X and mac_init (1 clock cycle delay) and 2 D Flip-Flops for valid_out (2 clock cycle delays).
 
+**WARNING:** Up until now, we have validated all our programs using Vivado 2018.2 with both implementation and testbenches. However, for the next two exercises, in addition to running our codes with testbenches (implementational and functional), we will generate bitstreams to ensure they run correctly, and we will execute them on the FPGA.
+
+For the implementation of the control unit, it is crucial to examine the VHDL directly in Exercise 5. In Exercise 4, we encountered a small logical error that we couldn't detect through simulations in Vivado. We only identified it when we ran it on the FPGA in Exercise 5.
+
 
 
