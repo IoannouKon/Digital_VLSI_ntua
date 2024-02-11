@@ -73,6 +73,7 @@ For the implementation of the control unit, it is crucial to examine the VHDL di
 We adjusted the Control Unit module to ensure that the Counter freezes when it receives valid_in and counts up to 8, disregarding intermediate valid_in signals. Before this modification, our filter produced accurate results only under ideal conditions, where valid_in and the counter started simultaneously. However, this scenario is feasible in the testbench but not in FPGA implementation due to the overhead cycles involved in communication with the processor.
 
 ### [Exercise 5](./VLSI-5(FIR_in_Zybo))
+In the context of this laboratory exercise, you will implement an 8-tap FIR filter. A proposed architecture for this filter, according to equation (1), is shown in the following diagram, where the data width is N bits. In this exercise, the implementation should be for N=8 bits data width x.
 
 In the context of this laboratory exercise, you are tasked with programming the ZYBO development board to implement a FIR filter. The input data will be sent from the embedded processor (ARM) to the FPGA for processing, and vice versa for the corresponding results. The communication between the processor and FPGA will be based on the AXI protocol. The implementation of the system is divided into the following steps:
 
@@ -83,6 +84,9 @@ In the context of this laboratory exercise, you are tasked with programming the 
 5) Exporting the system description and creating the application.
 6) Programming the ZYNQ SoC FPGA and executing the application.
 
+<<<<<<< HEAD
+
+=======
  ![Screenshot from 2024-02-11 21-05-59](https://github.com/IoannouKon/Digital_VLSI_ntua/assets/132226067/34fc2b02-3ad8-44e3-8a6a-3e5b679024ea)
 Create FIR IP:
  Initially, after creating a new project, we go to **Tools -> Create and Package New IP** to create a new IP with the FIR filter. In the new window opened by Vivado to create a new IP, we start by adding the VHDL file for the FIR filter via **Add Sources -> Design Sources** (which we created in the previous exercise). 
