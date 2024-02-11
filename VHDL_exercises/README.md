@@ -1,4 +1,4 @@
-###  [Exercise 1](./VHDL_exercises/VLSI-1(introduction))
+###  [Exercise 1](./VLSI-1(introduction))
 
 #### A2) Decoder 3 to 8 with Two Different Architectures: Dataflow and Behavioral
 
