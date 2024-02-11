@@ -113,4 +113,5 @@ If we receive a valid input value valid_in = 1 (and obviously, the reset is not 
 
 It's worth noting that we use the xil_printf command instead of printf because it imposes less overhead on the Zynq.
 
+###  [Exercise 6](./VLSI-6(Debayer_Filter))
 
