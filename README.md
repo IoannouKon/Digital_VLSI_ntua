@@ -19,3 +19,8 @@ This repository aims to serve as a valuable resource for students and enthusiast
 
 Feel free to explore the code and documentation, and contributions are always welcome!
 
+---
+
+## 👥: Collaborators:
+- [Filippos Sevastakis](https://github.com/FilipposSevastakis)
+- [Kostantinos Ioannou](https://github.com/IoannouKon)
