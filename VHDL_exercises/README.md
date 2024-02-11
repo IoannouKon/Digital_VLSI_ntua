@@ -36,4 +36,4 @@ The purpose of the laboratory exercise is to familiarize students with the desig
 5) Implement a 4-digit Parallel BCD Adder (4-BCD PA) using a Structural description, based on the structural unit of Question 4.
 ![Screenshot from 2024-02-11 19-36-20](https://github.com/IoannouKon/Digital_VLSI_ntua/assets/132226067/af23ff82-83f0-4ec5-81e9-ca380a9e7d6b)
 
-Feel free to adjust the formatting and add any additional information you deem necessary for your Git repository.
+
