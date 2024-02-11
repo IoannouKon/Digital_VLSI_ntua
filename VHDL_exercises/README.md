@@ -29,6 +29,7 @@ This shift register includes an additional input (std_logic) to choose between l
 Based on the provided counter, we describe a 3-bit up counter with a parallel input modulo (counting limit) of 3 bits.
 
 We also describe an up/down counter based on the provided counter implementation.
+--- 
 
 ### [Exercise 2](./VLSI-2(ADDERS))
 The purpose of the laboratory exercise is to familiarize students with the design methodology using structural description. Specifically, students will design complex computational circuits using pre-implemented hardware modules.
@@ -47,6 +48,7 @@ The purpose of the laboratory exercise is to familiarize students with the desig
 
 5) Implement a 4-digit Parallel BCD Adder (4-BCD PA) using a Structural description, based on the structural unit of Question 4.
 ![Screenshot from 2024-02-11 19-36-20](https://github.com/IoannouKon/Digital_VLSI_ntua/assets/132226067/af23ff82-83f0-4ec5-81e9-ca380a9e7d6b)
+--- 
 
 ### [Exercise 3](./VLSI-3(Syncronus_FA_and_4_bit_multipliers))
 
@@ -83,6 +85,7 @@ This configuration ensures synchronization through D Flip-Flops for X and mac_in
 For the implementation of the control unit, it is crucial to examine the VHDL directly in Exercise 5. In Exercise 4, we encountered a small logical error that we couldn't detect through simulations in Vivado. We only identified it when we ran it on the FPGA in Exercise 5. 
 
 We adjusted the Control Unit module to ensure that the Counter freezes when it receives valid_in and counts up to 8, disregarding intermediate valid_in signals. Before this modification, our filter produced accurate results only under ideal conditions, where valid_in and the counter started simultaneously. However, this scenario is feasible in the testbench but not in FPGA implementation due to the overhead cycles involved in communication with the processor.
+--- 
 
 ### [Exercise 5](./VLSI-5(FIR_in_Zybo))
 In the context of this laboratory exercise, you will implement an 8-tap FIR filter. A proposed architecture for this filter, according to equation (1), is shown in the following diagram, where the data width is N bits. In this exercise, the implementation should be for N=8 bits data width x.
@@ -134,7 +137,6 @@ It's worth noting that we use the xil_printf command instead of printf because i
 
 --- 
 
-I've formatted the text for better readability. Let me know if you need any further adjustments!
 
 ###  [Exercise 6](./VLSI-6(Debayer_Filter))
 coming soon
