@@ -1,6 +1,4 @@
-# Digital VLSI Project
 
-This repository contains projects and exercises related to Digital VLSI.
 
 ## Table of Contents
 - [Exercise 1](#exercise-1)
