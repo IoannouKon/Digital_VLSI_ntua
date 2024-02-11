@@ -96,9 +96,6 @@ In the context of this laboratory exercise, you are tasked with programming the 
 5) Exporting the system description and creating the application.
 6) Programming the ZYNQ SoC FPGA and executing the application.
 
-<<<<<<< HEAD
-
-=======
  ![Screenshot from 2024-02-11 21-05-59](https://github.com/IoannouKon/Digital_VLSI_ntua/assets/132226067/34fc2b02-3ad8-44e3-8a6a-3e5b679024ea)
 Create FIR IP:
  Initially, after creating a new project, we go to **Tools -> Create and Package New IP** to create a new IP with the FIR filter. In the new window opened by Vivado to create a new IP, we start by adding the VHDL file for the FIR filter via **Add Sources -> Design Sources** (which we created in the previous exercise). 
