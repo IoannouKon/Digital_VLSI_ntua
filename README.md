@@ -22,5 +22,5 @@ Feel free to explore the code and documentation, and contributions are always we
 ---
 
 ## 👥: Collaborators:
-- [Filippos Sevastakis](https://github.com/FilipposSevastakis)
+- [Manos Serlis](https://github.com/subdiduntil2)
 - [Kostantinos Ioannou](https://github.com/IoannouKon)
