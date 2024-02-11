@@ -43,7 +43,7 @@ The purpose of the laboratory exercise is to familiarize students with the desig
 2) **Implement a Full Adder (FA) using a Structural description, based on the structural unit of Question 1.**
 ![Screenshot from 2024-02-11 19-33-29](https://github.com/IoannouKon/Digital_VLSI_ntua/assets/132226067/60f0dc92-2946-462d-a1d3-b91582bf82ba)
 
-3)** Implement a 4-bit Parallel Adder (4-bit PA) using a Structural description, based on the structural unit of Question 2.**
+3)**Implement a 4-bit Parallel Adder (4-bit PA) using a Structural description, based on the structural unit of Question 2.**
 ![Screenshot from 2024-02-11 19-34-47](https://github.com/IoannouKon/Digital_VLSI_ntua/assets/132226067/1c30b92d-1760-4c65-8c78-ec6267e05068)
 
 4) **Implement a BCD Full Adder (BCD FA) using a Structural description.**
