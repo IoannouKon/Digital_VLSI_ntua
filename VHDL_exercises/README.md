@@ -54,8 +54,6 @@ In the context of this laboratory exercise, you will implement an 8-tap FIR filt
 ![Screenshot from 2024-02-11 20-28-55](https://github.com/IoannouKon/Digital_VLSI_ntua/assets/132226067/e5b2050b-11a3-4cb0-ac12-d5bea76e5b83)
 Attention: When integrating all individual units to create the overall architecture of the filter, appropriate synchronization between them must be considered.
 
-Certainly, here's a concise summary:
-
 **Control Unit:** Manages the filter's operation based on valid_in and the completion status of the ongoing MAC computation. It determines valid_out & mac_init values. In case an input arrives before the completion of the 8 required cycles, it waits until completion. If the next input is delayed, the filter enters a waiting state until the next valid_in=1 value (X) arrives.
 
 **MAC Unit:** Calculates the filter's output (y) by multiplying each filter coefficient (ROM output) with the corresponding input signal (RAM output). It reinitializes the output when mac_init=1 and, for the next 7 cycles, adds the product of RAM and ROM outputs to the existing result. To avoid overflow, the output y is 19 bits.
