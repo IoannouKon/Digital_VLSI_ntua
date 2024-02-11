@@ -84,14 +84,33 @@ In the context of this laboratory exercise, you are tasked with programming the 
 6) Programming the ZYNQ SoC FPGA and executing the application.
 
  ![Screenshot from 2024-02-11 21-05-59](https://github.com/IoannouKon/Digital_VLSI_ntua/assets/132226067/34fc2b02-3ad8-44e3-8a6a-3e5b679024ea)
-
+Create FIR IP:
  Initially, after creating a new project, we go to **Tools -> Create and Package New IP** to create a new IP with the FIR filter. In the new window opened by Vivado to create a new IP, we start by adding the VHDL file for the FIR filter via **Add Sources -> Design Sources** (which we created in the previous exercise). 
  Then, we need to modify the code for AXI. Below, we present ONLY the parts of the code that we modified.
 
+AXI-LITE configuration for FIR IP:
  At the point in the code where the hardware receives data from the software (i.e., when we write to the register - we chose to write to slv_reg0), we make the following changes:
 
 - We remove the parts where we write to slv_reg1, which we use for reading, i.e., for sending data from hardware to software. We do this to avoid a multi_drive error.
 - We need to add an 'else' statement to the condition `if (ready to read from software)` so that we can set `valid_in = 0`. This ensures that the FIR does not read the same input multiple times but receives and processes each input only once. Similarly, in the process where we send read data (i.e., where the hardware sends data to the software), we follow the logic below:
 
 When the software (master) sends valid data to the hardware (slave), the FIR produces output data with `valid_out = 1`, and the hardware stores it in slv_reg1. Then, until the master (software) sends `Read_ready`, indicating it's ready to receive data, we maintain the valid output value of the FIR filter in slv_reg1. Finally, when the signal comes that the master is ready to read, the slave (hardware) sends the data from slv_reg1 via axi_rdata to the master (software) and clears the bit representing valid_out to avoid storing the same value again. Essentially, the slave waits for the master to send data with `valid_in = 1` so that the FIR can produce output data with `valid_out = 1`.
+
+Once we have saved our changes, the new IP for the FIR filter is ready. We then return to our initial project and via `setting -> IP -> repository`, we add the path we created for the FIR_IP so that we can add it to the design.
+
+We add the Zynq and the FIR_IP to the design, and the connections are made automatically, resulting in the final design as shown below.
+
+![Screenshot from 2024-02-11 21-12-46](https://github.com/IoannouKon/Digital_VLSI_ntua/assets/132226067/9e69550a-9235-4150-a99c-6f7e8db25491)
+
+Next, we perform the HDL wrapper for our design, followed by RTL analysis and running the implementation process to ensure that there are no errors or significant warnings. Finally, we generate the bitstream by navigating to `File -> Export -> Export Hardware`, which automatically opens the SDK.
+
+ARM code:
+After retrieving the MY_IP_BASEADDR from the xparameters.h file for our specific application and defining our variables, we prompt the user to enter values for rst, valid_in, and data_in. Then, we shift these values to place them correctly and concatenate them into the 32-bit variable A. Using the Xil_out32 command, we send the data to the slave (hardware), adding 0 to the address because we are writing to slv_reg0.
+
+Next, we read the filter's output value from slv_reg1, whose address corresponds to MY_IP_BASEADDR + 4. If we receive valid_in = 0 or reset = 1, we use the xil_in32 command to read slv_reg1 and isolate valid_out. We expect valid_out to be zero in this if condition.
+
+If we receive a valid input value valid_in = 1 (and obviously, the reset is not active), then within an internal while{} loop, we continuously read slv_reg1 until the slave (FIR_IP) provides us with a valid output value, meaning valid_out = 1. Finally, we isolate the data_out using a simple mask and print it so that the user can see it via serial communication in the SDK terminal. The program then continues and prompts the user for new input values.
+
+It's worth noting that we use the xil_printf command instead of printf because it imposes less overhead on the Zynq.
+
 
