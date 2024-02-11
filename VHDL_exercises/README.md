@@ -19,6 +19,7 @@ Based on the provided counter, we describe a 3-bit up counter with a parallel in
 We also describe an up/down counter based on the provided counter implementation.
 
 ### [Exercise 2](./VLSI-2(ADDERS))
+The purpose of the laboratory exercise is to familiarize students with the design methodology using structural description. Specifically, students will design complex computational circuits using pre-implemented hardware modules.
 
 1) Implement a Half Adder (HA) using a Dataflow description.
 ![Screenshot from 2024-02-11 19-32-58](https://github.com/IoannouKon/Digital_VLSI_ntua/assets/132226067/0563298d-4dbd-42f7-b2cf-3d3a69382dea)
