@@ -50,5 +50,9 @@ The purpose of the laboratory exercise is to familiarize students with the techn
    ![4-bit Systolic Multiplier](https://github.com/IoannouKon/Digital_VLSI_ntua/assets/132226067/a9d798f4-dcdd-49ea-8b5b-d6a189945267)
 
 ### [Exercise 5](./VLSI-5(FIR_in_Zybo))
+In the context of this laboratory exercise, you will implement an 8-tap FIR filter. A proposed architecture for this filter, according to equation (1), is shown in the following diagram, where the data width is N bits. In this exercise, the implementation should be for N=8 bits data width x.
+![Screenshot from 2024-02-11 20-28-55](https://github.com/IoannouKon/Digital_VLSI_ntua/assets/132226067/e5b2050b-11a3-4cb0-ac12-d5bea76e5b83)
+Attention: When integrating all individual units to create the overall architecture of the filter, appropriate synchronization between them must be considered.
+
 
 
