@@ -1,3 +1,15 @@
+# Digital VLSI Project
+
+This repository contains projects and exercises related to Digital VLSI.
+
+## Table of Contents
+- [Exercise 1](#exercise-1)
+- [Exercise 2](#exercise-2)
+- [Exercise 3](#exercise-3)
+- [Exercise 4](#exercise-4)
+- [Exercise 5](#exercise-5)
+- [Exercise 6](#exercise-6)
+- 
 ###  [Exercise 1](./VLSI-1(introduction))
 
 #### A2) Decoder 3 to 8 with Two Different Architectures: Dataflow and Behavioral
@@ -118,4 +130,4 @@ If we receive a valid input value valid_in = 1 (and obviously, the reset is not 
 It's worth noting that we use the xil_printf command instead of printf because it imposes less overhead on the Zynq.
 
 ###  [Exercise 6](./VLSI-6(Debayer_Filter))
-
+coming soon
