@@ -88,3 +88,10 @@ In the context of this laboratory exercise, you are tasked with programming the 
  Initially, after creating a new project, we go to **Tools -> Create and Package New IP** to create a new IP with the FIR filter. In the new window opened by Vivado to create a new IP, we start by adding the VHDL file for the FIR filter via **Add Sources -> Design Sources** (which we created in the previous exercise). 
  Then, we need to modify the code for AXI. Below, we present ONLY the parts of the code that we modified.
 
+ At the point in the code where the hardware receives data from the software (i.e., when we write to the register - we chose to write to slv_reg0), we make the following changes:
+
+- We remove the parts where we write to slv_reg1, which we use for reading, i.e., for sending data from hardware to software. We do this to avoid a multi_drive error.
+- We need to add an 'else' statement to the condition `if (ready to read from software)` so that we can set `valid_in = 0`. This ensures that the FIR does not read the same input multiple times but receives and processes each input only once. Similarly, in the process where we send read data (i.e., where the hardware sends data to the software), we follow the logic below:
+
+When the software (master) sends valid data to the hardware (slave), the FIR produces output data with `valid_out = 1`, and the hardware stores it in slv_reg1. Then, until the master (software) sends `Read_ready`, indicating it's ready to receive data, we maintain the valid output value of the FIR filter in slv_reg1. Finally, when the signal comes that the master is ready to read, the slave (hardware) sends the data from slv_reg1 via axi_rdata to the master (software) and clears the bit representing valid_out to avoid storing the same value again. Essentially, the slave waits for the master to send data with `valid_in = 1` so that the FIR can produce output data with `valid_out = 1`.
+
