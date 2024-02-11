@@ -48,13 +48,15 @@ The purpose of the laboratory exercise is to familiarize students with the techn
 
 3) **Implement a systolic (pipeline-like) multiplier for 4-bit carry-propagate using synchronous Full Adders.** The circuit should be fed with a different pair of inputs at each clock cycle and should give the correct result in each clock cycle after some initial latency T_latency.
    ![4-bit Systolic Multiplier](https://github.com/IoannouKon/Digital_VLSI_ntua/assets/132226067/a9d798f4-dcdd-49ea-8b5b-d6a189945267)
-
 ### [Exercise 4](./VlSI-4(FIR))
-In the context of this laboratory exercise, you will implement an 8-tap FIR filter. A proposed architecture for this filter, according to equation (1), is shown in the following diagram, where the data width is N bits. In this exercise, the implementation should be for N=8 bits data width x.
-![Screenshot from 2024-02-11 20-28-55](https://github.com/IoannouKon/Digital_VLSI_ntua/assets/132226067/e5b2050b-11a3-4cb0-ac12-d5bea76e5b83)
-Attention: When integrating all individual units to create the overall architecture of the filter, appropriate synchronization between them must be considered.
 
-**Control Unit:** Manages the filter's operation based on valid_in and the completion status of the ongoing MAC computation. It determines valid_out & mac_init values. In case an input arrives before the completion of the 8 required cycles, it waits until completion. If the next input is delayed, the filter enters a waiting state until the next valid_in=1 value (X) arrives.
+In this lab exercise, you will implement an 8-tap FIR filter. The proposed architecture, based on equation (1), is depicted in the diagram below, with a data width of N bits. The implementation will be for N=8 bits data width x.
+
+![FIR Filter Architecture](https://github.com/IoannouKon/Digital_VLSI_ntua/assets/132226067/e5b2050b-11a3-4cb0-ac12-d5bea76e5b83)
+
+**Attention:** When integrating all individual units to create the overall architecture of the filter, appropriate synchronization between them must be considered.
+
+**Control Unit:** Manages the filter's operation based on valid_in and the completion status of the ongoing MAC computation. It determines valid_out & mac_init values. If an input arrives before the completion of the 8 required cycles, it waits until completion. If the next input is delayed, the filter enters a waiting state until the next valid_in=1 value (X) arrives.
 
 **MAC Unit:** Calculates the filter's output (y) by multiplying each filter coefficient (ROM output) with the corresponding input signal (RAM output). It reinitializes the output when mac_init=1 and, for the next 7 cycles, adds the product of RAM and ROM outputs to the existing result. To avoid overflow, the output y is 19 bits.
 
@@ -66,8 +68,8 @@ This configuration ensures synchronization through D Flip-Flops for X and mac_in
 
 **WARNING:** Up until now, we have validated all our programs using Vivado 2018.2 with both implementation and testbenches. However, for the next two exercises, in addition to running our codes with testbenches (implementational and functional), we will generate bitstreams to ensure they run correctly, and we will execute them on the FPGA.
 
-For the implementation of the control unit, it is crucial to examine the VHDL directly in Exercise 5. In Exercise 4, we encountered a small logical error that we couldn't detect through simulations in Vivado. We only identified it when we ran it on the FPGA in Exercise 5.
-We adjusted the Control Unit module to ensure that the Counter freezes when it receives valid_in and counts up to 8, disregarding intermediate valid_in signals. Before this modification, our filter produced accurate results only under ideal conditions, where valid_in and the counter started simultaneously. However, this scenario is feasible in the testbench but not in FPGA implementation due to the overhead cycles involved in communication with the processor.
+For the implementation of the control unit, it is crucial to examine the VHDL directly in Exercise 5. In Exercise 4, we encountered a small logical error that we couldn't detect through simulations in Vivado. We only identified it when we ran it on the FPGA in Exercise 5. 
 
+We adjusted the Control Unit module to ensure that the Counter freezes when it receives valid_in and counts up to 8, disregarding intermediate valid_in signals. Before this modification, our filter produced accurate results only under ideal conditions, where valid_in and the counter started simultaneously. However, this scenario is feasible in the testbench but not in FPGA implementation due to the overhead cycles involved in communication with the processor.
 
 
