@@ -37,3 +37,6 @@ The purpose of the laboratory exercise is to familiarize students with the desig
 ![Screenshot from 2024-02-11 19-36-20](https://github.com/IoannouKon/Digital_VLSI_ntua/assets/132226067/af23ff82-83f0-4ec5-81e9-ca380a9e7d6b)
 
 
+### [Exercise 3](./VLSI-3(Syncronus FA and 4 bit multipliers))
+
+
